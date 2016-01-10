@@ -9,34 +9,39 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    
+    var hero: Hero!
+    var touchLocation: CGFloat!
+    var gameOver = false
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!"
-        myLabel.fontSize = 45
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-        
-        self.addChild(myLabel)
+        addBG()
+        addJeff()
+    }
+    
+    func addBG() {
+        let bg = SKSpriteNode(imageNamed: "bg")
+        addChild(bg)
+    }
+    
+    func addJeff() {
+        let jeff = SKSpriteNode(imageNamed: "jeff")
+        hero = Hero(guy: jeff)
+        addChild(jeff)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
-        
+       
         for touch in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+            if !gameOver {
+                touchLocation = (touch.locationInView(self.view).y * -1) + (self.size.height/2)
+            }
         }
+        
+        let moveAction = SKAction.moveToY(touchLocation, duration: 0.5)
+        moveAction.timingMode = SKActionTimingMode.EaseOut
+        hero.guy.runAction(moveAction)
     }
    
     override func update(currentTime: CFTimeInterval) {

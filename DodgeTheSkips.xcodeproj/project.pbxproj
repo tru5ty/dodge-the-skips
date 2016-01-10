@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		23D975D21C41FF6C00808C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D975D11C41FF6C00808C46 /* AppDelegate.swift */; };
-		23D975D41C41FF6C00808C46 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 23D975D31C41FF6C00808C46 /* GameScene.sks */; };
 		23D975D61C41FF6C00808C46 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D975D51C41FF6C00808C46 /* GameScene.swift */; };
 		23D975D81C41FF6C00808C46 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D975D71C41FF6C00808C46 /* GameViewController.swift */; };
 		23D975DB1C41FF6C00808C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D975D91C41FF6C00808C46 /* Main.storyboard */; };
 		23D975DD1C41FF6C00808C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D975DC1C41FF6C00808C46 /* Assets.xcassets */; };
 		23D975E01C41FF6C00808C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D975DE1C41FF6C00808C46 /* LaunchScreen.storyboard */; };
+		23D975E81C42043700808C46 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D975E71C42043700808C46 /* Hero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23D975CE1C41FF6C00808C46 /* DodgeTheSkips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DodgeTheSkips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D975D11C41FF6C00808C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23D975D31C41FF6C00808C46 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		23D975D51C41FF6C00808C46 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		23D975D71C41FF6C00808C46 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		23D975DA1C41FF6C00808C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23D975DC1C41FF6C00808C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23D975DF1C41FF6C00808C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23D975E11C41FF6C00808C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D975E71C42043700808C46 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				23D975D11C41FF6C00808C46 /* AppDelegate.swift */,
-				23D975D31C41FF6C00808C46 /* GameScene.sks */,
 				23D975D51C41FF6C00808C46 /* GameScene.swift */,
 				23D975D71C41FF6C00808C46 /* GameViewController.swift */,
 				23D975D91C41FF6C00808C46 /* Main.storyboard */,
 				23D975DC1C41FF6C00808C46 /* Assets.xcassets */,
 				23D975DE1C41FF6C00808C46 /* LaunchScreen.storyboard */,
 				23D975E11C41FF6C00808C46 /* Info.plist */,
+				23D975E71C42043700808C46 /* Hero.swift */,
 			);
 			path = DodgeTheSkips;
 			sourceTree = "<group>";
@@ -129,7 +129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23D975D41C41FF6C00808C46 /* GameScene.sks in Resources */,
 				23D975E01C41FF6C00808C46 /* LaunchScreen.storyboard in Resources */,
 				23D975DD1C41FF6C00808C46 /* Assets.xcassets in Resources */,
 				23D975DB1C41FF6C00808C46 /* Main.storyboard in Resources */,
@@ -146,6 +145,7 @@
 				23D975D61C41FF6C00808C46 /* GameScene.swift in Sources */,
 				23D975D81C41FF6C00808C46 /* GameViewController.swift in Sources */,
 				23D975D21C41FF6C00808C46 /* AppDelegate.swift in Sources */,
+				23D975E81C42043700808C46 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
